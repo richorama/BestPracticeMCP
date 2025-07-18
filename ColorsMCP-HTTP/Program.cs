@@ -24,6 +24,7 @@ namespace ColorsMCP_HTTP
             });
 
             builder.Services.AddSingleton<ColorsService>();
+            builder.Services.AddSingleton<BestPracticesService>();
 
             var app = builder.Build();
 

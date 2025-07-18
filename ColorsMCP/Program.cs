@@ -1,6 +1,7 @@
 ﻿using ColorsCommonMCP;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ModelContextProtocol.Server;
 
 namespace ColorsMCP
 {
@@ -16,10 +17,11 @@ namespace ColorsMCP
                 .WithTools<ColorsTools>();
 
             builder.Services.AddSingleton<ColorsService>();
+            builder.Services.AddSingleton<BestPracticesService>();
 
             var app = builder.Build();
 
-            var colorsService = app.Services.GetRequiredService<ColorsService>();
+            app.Services.GetRequiredService<ColorsService>();
 
             await app.RunAsync();
 
