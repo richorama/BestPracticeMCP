@@ -10,8 +10,8 @@
     <Version>1.0.0</Version>
     <Authors>Richard Astbury</Authors>
     <Description>A Model Context Protocol (MCP) server that provides coding best practices for various programming languages</Description>
-    <PackageProjectUrl>https://github.com/richorama/ColorsMCP</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/richorama/ColorsMCP</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/richorama/BestPracticeMCP</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/richorama/BestPracticeMCP</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>MCP;ModelContextProtocol;BestPractices;Coding;AI</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

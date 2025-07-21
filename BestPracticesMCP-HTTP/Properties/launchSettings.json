@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ColorsMCP-HTTP": {
+    "BestPracticeMCP-HTTP": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

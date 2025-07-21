@@ -78,7 +78,7 @@ namespace BestPracticesMCP_HTTP
                     options.ResourceMetadata = new()
                     {
                         Resource = new Uri(serverUrl),
-                        ResourceDocumentation = new Uri("https://github.com/richorama/colorsmcp"),
+                        ResourceDocumentation = new Uri("https://github.com/richorama/bestpracticemcp"),
                         AuthorizationServers = { new Uri(oAuthServerUrl) },
                         ScopesSupported = [$"api://{audience}/{scope}"],
                     };
