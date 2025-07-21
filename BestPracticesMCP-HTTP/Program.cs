@@ -11,7 +11,7 @@ namespace BestPracticesMCP_HTTP
             builder.Services
                 .AddMcpServer()
                 .WithHttpTransport()
-                .WithTools<BestPracticesService>();
+                .WithTools<BestPracticesTools>();
 
             builder.Services.AddCors(options =>
             {
@@ -24,6 +24,7 @@ namespace BestPracticesMCP_HTTP
             });
 
             builder.Services.AddSingleton<BestPracticesService>();
+            builder.Services.AddSingleton<BestPracticesTools>();
 
             var app = builder.Build();
 
