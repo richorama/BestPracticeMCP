@@ -78,7 +78,7 @@ namespace ColorsMCP_HTTP
                     options.ResourceMetadata = new()
                     {
                         Resource = new Uri(serverUrl),
-                        ResourceDocumentation = new Uri("https://github.com/markharrison/colorsmcp"),
+                        ResourceDocumentation = new Uri("https://github.com/richorama/colorsmcp"),
                         AuthorizationServers = { new Uri(oAuthServerUrl) },
                         ScopesSupported = [$"api://{audience}/{scope}"],
                     };
@@ -91,7 +91,7 @@ namespace ColorsMCP_HTTP
             builder.Services
                 .AddMcpServer()
                 .WithHttpTransport()
-                .WithTools<ColorsTools>();
+                .WithTools<BestPracticesService>();
 
             builder.Services.AddCors(options =>
             {
@@ -103,11 +103,10 @@ namespace ColorsMCP_HTTP
                 });
             });
 
-            builder.Services.AddSingleton<ColorsService>();
+            builder.Services.AddSingleton<BestPracticesService>();
 
             var app = builder.Build();
 
-            var colorsService = app.Services.GetRequiredService<ColorsService>();
 
             app.UseAuthentication();
             app.UseAuthorization();

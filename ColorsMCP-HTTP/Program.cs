@@ -11,7 +11,7 @@ namespace ColorsMCP_HTTP
             builder.Services
                 .AddMcpServer()
                 .WithHttpTransport()
-                .WithTools<ColorsTools>();
+                .WithTools<BestPracticesService>();
 
             builder.Services.AddCors(options =>
             {
@@ -23,12 +23,9 @@ namespace ColorsMCP_HTTP
                 });
             });
 
-            builder.Services.AddSingleton<ColorsService>();
             builder.Services.AddSingleton<BestPracticesService>();
 
             var app = builder.Build();
-
-            var colorsService = app.Services.GetRequiredService<ColorsService>(); 
 
             app.UseCors();
 

@@ -5,11 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient", "MCPClient\MCPClient.csproj", "{185A4F00-F574-5F80-CD98-7F3478D756BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsMCP", "ColorsMCP\ColorsMCP.csproj", "{8ACBBAC0-BCD8-56D1-1D54-BA7DC3C9BD9F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsMCP-HTTP", "ColorsMCP-HTTP\ColorsMCP-HTTP.csproj", "{3C23F082-95AC-77A2-F041-8B181C18F148}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsMCP-SSE-func", "ColorsMCP-SSE-func\ColorsMCP-SSE-func.csproj", "{AC44DD16-603C-5F03-898D-89884CBAFE17}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsCommonMCP", "ColorsCommonMCP\ColorsCommonMCP.csproj", "{5DFE4A73-1678-307E-100D-CC9A82E0FCA9}"
 EndProject
