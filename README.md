@@ -1,10 +1,10 @@
-# ColorsMCP - Model Context Protocol (MCP) Server
+# BestPracticesMCP - Model Context Protocol (MCP) Server
 
 ## Overview
 
-This is a Model Context Protocol (MCP) server implementation built with .NET 9.0. 
+This is a Model Context Protocol (MCP) server implementation built with .NET 8.0. 
 
-This can be used to access knowledge about Colors.
+This can be used to access coding best practices for various programming languages.
 
 More information [https://markharrison.io/doc-mcp](<https://markharrison.io/doc-mcp>)
 
@@ -18,11 +18,8 @@ Different projects are provided to support:
 ## Example 
 
 ```text
-I need a palette of four colors from the blue family - plus black ... 
-   please add to colors.html so I can inspect
+What are the best practices for writing Python code?
 ```
-
-![screenshot](./docs/scrn1.png)
 
 ## Configuration STDIO
 
@@ -33,13 +30,13 @@ Filename:  .vscode\mcp.json
 ```JSON
 {
     "servers": {
-        "colorsserver": {
+        "bestpracticesserver": {
             "type": "stdio",
             "command": "dotnet",
             "args": [
                 "run",
                 "--project",
-                "c:/dev/ColorsMCP/ColorsMCP/ColorsMCP.csproj"
+                "c:/dev/BestPracticesMCP/BestPracticesMCP/BestPracticesMCP.csproj"
             ]
         }
     }
@@ -52,14 +49,14 @@ Filename:  .vscode\mcp.json
 
 ```
 cd <projectroot>
-docker build -f colorsmcp-http/Dockerfile -t colorsmcp-http:latest .
+docker build -f bestpracticesmcp-http/Dockerfile -t bestpracticesmcp-http:latest .
 docker images
 ```
 
 ### Run Docker file 
 
 ```
-docker run -p 3000:8080 -p 3001:8081 -d colorsmcp-http:latest
+docker run -p 3000:8080 -p 3001:8081 -d bestpracticesmcp-http:latest
 ```
 
 ### VSCode config
@@ -69,7 +66,7 @@ Filename:  .vscode\mcp.json
  ```JSON
 {
     "servers": {
-        "colorsserver": {
+        "bestpracticesserver": {
             "type": "http",
             "url": "http://localhost:3000"
         }
@@ -77,39 +74,7 @@ Filename:  .vscode\mcp.json
 }
 ```
 
-## Configuration SSE - Azure Function App 
 
-### Azure Functions
-
-There is a project to build an Azure Function App.
-
-Note that the Url of the MCP Server will be `http://xxxxx.azurewebsites.net/runtime/webhooks/mcp/sse`.
-
-![screenshot](./docs/scrn2.png)
-
-In addition a key is needed.  This is located on Function App | Keys blade and is callled mcp_extension.
-
-The header for this key is called `x-functions-key`.
-
-![screenshot](./docs/scrn3.png)
-
-### VSCode config
-
-The VS Code config would look like: 
-
-```JSON
-{
-    "servers": {
-        "colorsserver": {
-            "type": "sse",
-            "url": "https://xxxxx.azurewebsites.net//runtime/webhooks/mcp/sse",
-            "headers": {
-                "x-functions-key": "key"
-            }
-        }
-    }
-}
-```
 
 
 ## Test

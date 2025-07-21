@@ -1,6 +1,6 @@
-﻿using ColorsCommonMCP;
+﻿using BestPracticesCommonMCP;
 
-namespace ColorsMCP_HTTP
+namespace BestPracticesMCP_HTTP
 {
     public class Program
     {

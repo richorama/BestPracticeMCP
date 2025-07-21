@@ -1,4 +1,4 @@
-namespace ColorsCommonMCP;
+namespace BestPracticesCommonMCP;
 
 public class BestPracticesService
 {

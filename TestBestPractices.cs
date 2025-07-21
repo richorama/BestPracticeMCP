@@ -1,4 +1,4 @@
-using ColorsCommonMCP;
+using BestPracticesCommonMCP;
 
 var service = new BestPracticesService();
 

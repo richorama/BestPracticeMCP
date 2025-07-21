@@ -1,9 +1,9 @@
-﻿using ColorsCommonMCP;
+﻿using BestPracticesCommonMCP;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ModelContextProtocol.AspNetCore.Authentication;
 using System.Security.Claims;
 
-namespace ColorsMCP_HTTP
+namespace BestPracticesMCP_HTTP
 {
     public class Program
     {
