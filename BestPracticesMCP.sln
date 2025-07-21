@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient", "MCPClient\MCPClient.csproj", "{185A4F00-F574-5F80-CD98-7F3478D756BB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPracticesMCP-HTTP", "BestPracticesMCP-HTTP\BestPracticesMCP-HTTP.csproj", "{3C23F082-95AC-77A2-F041-8B181C18F148}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPracticesCommonMCP", "BestPracticesCommonMCP\BestPracticesCommonMCP.csproj", "{5DFE4A73-1678-307E-100D-CC9A82E0FCA9}"
